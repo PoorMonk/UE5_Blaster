@@ -72,3 +72,15 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+**/Mannequin
+**/ThirdPerson
+**/ThirdPersonBP
+**/LearningKit_Games
+**/MilitaryWeapSilver
+**/AnimStarterPack
+**/BlockGame
+**/Hour_of_Code
+**/LearningKit_Robots
+**/LevelPrototyping
+**/Characters
