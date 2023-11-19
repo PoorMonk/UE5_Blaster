@@ -47,6 +47,19 @@ void UOverheadWidget::ShowPlayerNetRole(APawn* InPawn)
 	SetDisplayText(strShowText);
 }
 
+void UOverheadWidget::ShowPlayerName(APawn* InPawn)
+{
+	if (InPawn == nullptr) return;
+	APlayerState* playerState = InPawn->GetPlayerState();
+	FString playerName = FString("");
+	if (playerState)
+	{
+		playerName = playerState->GetPlayerName();
+	}
+	FString strShowText = FString::Printf(TEXT("Player name is : %s"), *playerName);
+	SetDisplayText(strShowText);
+}
+
 void UOverheadWidget::OnLevelRemovedFromWorld(ULevel* InLevel, UWorld* InWorld)
 {
 	RemoveFromParent();
