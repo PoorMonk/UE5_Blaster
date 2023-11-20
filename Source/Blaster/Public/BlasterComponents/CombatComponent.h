@@ -25,7 +25,7 @@ public:
 	void ServerSetAiming(bool bAiming);
 
 	UFUNCTION()
-	void OnRep_EquppedWeapon();
+	void OnRep_EquipedWeapon();
 
 protected:
 	virtual void BeginPlay() override;
@@ -35,7 +35,7 @@ protected:
 private:
 	class ABlasterCharacter* character;
 
-	UPROPERTY(ReplicatedUsing = OnRep_EquppedWeapon)
+	UPROPERTY(ReplicatedUsing = OnRep_EquipedWeapon)
 	AWeapon* EquippedWeapon;
 	
 	UPROPERTY(Replicated)

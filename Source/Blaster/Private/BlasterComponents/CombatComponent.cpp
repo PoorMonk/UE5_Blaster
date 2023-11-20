@@ -58,7 +58,7 @@ void UCombatComponent::ServerSetAiming_Implementation(bool bAiming)
 	}
 }
 
-void UCombatComponent::OnRep_EquppedWeapon()
+void UCombatComponent::OnRep_EquipedWeapon()
 {
 	if (EquippedWeapon && character)
 	{
